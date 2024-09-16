@@ -1,0 +1,30 @@
+@import ../../variables
+
+footer
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    gap: 20px
+    div
+        display: flex
+        flex-direction: column
+        gap: 24px
+        align-items: flex-start
+        width: 50%
+        p
+            @include p()
+            color: $gray
+        h2
+            @include h2()
+            color: $green
+    img
+        width: 50%
+        aspect-ratio: 100/77
+@media (max-width: 500px)
+    footer
+        flex-direction: column
+        div, img
+            width: 100%
+        div
+            gap: 8px

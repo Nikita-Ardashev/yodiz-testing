@@ -1,0 +1,15 @@
+@import ../../variables
+.ui-register-btn
+    background: $sea-wave
+    padding: 28px
+    border-radius: 10px
+    width: 100%
+    transition: .4s
+    p
+        @include buttonFont()
+        color: white
+
+    &:hover, &:focus
+        background: darken($sea-wave, 10)
+    &:active
+        background: darken($sea-wave, 20)
